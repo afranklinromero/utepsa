@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table {
+        .styled-table {
             border-collapse: collapse;
+            margin-bottom: 20px;
         }
-        th, td {
+        .styled-table th, .styled-table td {
             border: 1px solid black;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
     </style>
 </head>
@@ -20,7 +21,7 @@
 <main>
     <section>
         <h2>Tabla de Calificaciones</h2>
-        <table>
+        <table class="styled-table">
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -33,41 +34,232 @@
             <tbody>
                 <tr>
                     <td>Estudiante 1</td>
+                    <td>85</td>
                     <td>90</td>
-                    <td>20</td>
-                    <td>62</td>
-                    <td>30</td>
+                    <td>75</td>
+                    <td>88</td>
                 </tr>
                 <tr>
                     <td>Estudiante 2</td>
-                    <td>29</td>
+                    <td>92</td>
                     <td>80</td>
-                    <td>67</td>
-                    <td>45</td>
+                    <td>85</td>
+                    <td>70</td>
                 </tr>
                 <tr>
                     <td>Estudiante 3</td>
-                    <td>50</td>
-                    <td>40</td>
-                    <td>60</td>
-                    <td>44</td>
+                    <td>78</td>
+                    <td>95</td>
+                    <td>68</td>
+                    <td>82</td>
                 </tr>
                 <tr>
                     <td>Estudiante 4</td>
-                    <td>95</td>
-                    <td>90</td>
+                    <td>-</td>
+                    <td>97</td>
+                    <td>91</td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <td>Estudiante 5</td>
+                    <td>89</td>
+                    <td>84</td>
                     <td>80</td>
-                    <td>99</td>
+                    <td>90</td>
                 </tr>
             </tbody>
         </table>
 
-        <table>
-
+        <h2>Calendario</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th rowspan="2">Ano</th>
+                    <th rowspan="2">Mes</th>
+                    <th rowspan="2">Dia</th>
+                    <th rowspan="2">Fecha</th>
+                    <th rowspan="2">Anadir</th>
+                    <th colspan="4">Horario</th>
+                </tr>
+                <tr>
+                    <th>Inicial</th>
+                    <th>Final</th>
+                    <th>Inicial</th>
+                    <th>Final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6">2024</td>
+                    <td rowspan="3">Mayo</td>
+                    <td>Viernes</td>
+                    <td>28</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sabado</td>
+                    <td>29</td>
+                    <td>+</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>30</td>
+                    <td>+</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Junio</td>
+                    <td>Lunes</td>
+                    <td>1</td>
+                    <td>+</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>2</td>
+                    <td>+</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>3</td>
+                    <td>+</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
         </table>
-    </section>
+
+        <h2>Estudiantes Utepsa</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th rowspan="2">ID</th>
+                    <th colspan="2">DATOS PERSONALES</th>
+                    <th rowspan="2">DIRECCION</th>
+                    <th rowspan="2">TELEFONO</th>
+                </tr>
+                <tr>
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>JOSE</td>
+                <td>VACA</td>
+                <td>CUARTO ANILLO</td>
+                <td>7954846</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>RICARDO</td>
+                <td>PEREIRA</td>
+                <td>TERCER ANILLO</td>
+                <td>7895461</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>VLADI</td>
+                <td>NUNEZ</td>
+                <td>SEGUNDO ANILLO</td>
+                <td>7658548</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>ALAN</td>
+                <td>CUELLAR</td>
+                <td>TERCER ANILLO</td>
+                <td>75845125</td>
+            </tr>
+        </table>
+
+        <h2>NOTAS FINALES</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>1ER PARCIAL</th>
+                    <th>2DO PARCIAL</th>
+                    <th>FINAL</th>
+                </tr>
+            </thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h2>FIGURA EN TABLA</h2>
+        <table>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td>3</td>
+                <td></td>
+                <td>5</td>
+                <td></td>
+                <td>7</td>
+                <td></td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11</td>
+                <td></td>
+                <td>13</td>
+                <td></td>
+                <td>15</td>
+                <td></td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td></td>
+                <td>20</td>
+                <td></td>
+                <td>22</td>
+                <td></td>
+                <td>24</td>
+                <td></td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>28</td>
+                <td></td>
+                <td>30</td>
+                <td></td>
+                <td>32</td>
+                <td></td>
+                <td>34</td>
+            </tr>
+        </table>
+</section>
+
+
 
 </main>
-
 </body>
 </html>
