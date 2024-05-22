@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva de Hotel</title>
+</head>
+<body>
+    <h1>Formulario de Reserva de Hotel</h1>
+    <form action="/submit_reserva" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="fecha_llegada">Fecha de Llegada:</label><br>
+        <input type="date" id="fecha_llegada" name="fecha_llegada" required><br><br>
+
+        <label for="fecha_salida">Fecha de Salida:</label><br>
+        <input type="date" id="fecha_salida" name="fecha_salida" required><br><br>
+
+        <label for="num_huespedes">Número de Huéspedes:</label><br>
+        <input type="number" id="num_huespedes" name="num_huespedes" min="1" required><br><br>
+
+        <label for="tipo_habitacion">Tipo de Habitación:</label><br>
+        <select id="tipo_habitacion" name="tipo_habitacion" required>
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="suite">Suite</option>
+        </select><br><br>
+
+        <input type="submit" value="Reservar">
+    </form>
+</body>
+</html>
