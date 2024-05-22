@@ -26,6 +26,14 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -74,11 +82,59 @@
                 <h2>Formulario de Encuesta</h2>
                 <form action="#" method="POST">
                     <div class="form-group">
-
+                        <label for="encuesta">Edad:</label>
+                        <input type="number" id="encuesta" name="encuesta">
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="masculino" name="masculino" value="1">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="femenino" name="femenino" value="2">
+                        <label for="femenino">Femenino</label><br>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="otro" name="otro" value="3">
+                        <label for="otro">Otro</label><br>
                     </div>
                 </form>
             </div>
+
+            <div class="form-container">
+                <h2>Formulario de Reserva de Hotel</h2>
+                    <div class="form-group">
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Correo Electronico:</label>
+                        <input type="email" id="Email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Fecha">Fecha de llegada:</label>
+                        <input type="date" id="Fecha" name="fechaDeLlegada" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="FechaL">Fecha de Salida:</label>
+                        <input type="date" id="FechaL" name="fechaDeSalida" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Huespedes">Numero de huespedes"</label>
+                        <input type="number" id="Huespedes" name="numeroDeHuespedes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Habitacion">Tipo de Habitacion</label>
+                        <select id="Habitacion" name="habitacion">
+                            <option value="Individual">Individual</option>
+                            <option value="Doble">Doble</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Reservar">
+                    </div>
+            </div>
         </section>
+
 
     </main>
     
