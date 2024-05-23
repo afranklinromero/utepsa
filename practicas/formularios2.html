@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body>
+    <h2>Formulario de Encuesta</h2>
+    <form>
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad"><br><br>
+
+        <label>Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label><br><br>
+
+        <label>Intereses:</label><br>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+        <label for="deportes">Deportes</label><br>
+        <input type="checkbox" id="musica" name="intereses" value="musica">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+        <label for="tecnologia">Tecnología</label><br><br>
+
+        <label for="satisfaccion">Nivel de satisfacción:</label>
+        <select id="satisfaccion" name="satisfaccion">
+            <option value="muy_satisfecho">Muy satisfecho</option>
+            <option value="satisfecho">Satisfecho</option>
+            <option value="neutral">Neutral</option>
+            <option value="insatisfecho">Insatisfecho</option>
+            <option value="muy_insatisfecho">Muy insatisfecho</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br><br>
+
+    <h2>Formulario de Reserva de Hotel</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <label for="fecha_llegada">Fecha de llegada:</label>
+        <input type="date" id="fecha_llegada" name="fecha_llegada"><br><br>
+
+        <label for="fecha_salida">Fecha de salida:</label>
+        <input type="date" id="fecha_salida" name="fecha_salida"><br><br>
+
+        <label for="huespedes">Número de huéspedes:</label>
+        <input type="number" id="huespedes" name="huespedes"><br><br>
+
+        <label for="habitacion">Tipo de habitación:</label>
+        <select id="habitacion" name="habitacion">
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="suite">Suite</option>
+        </select><br><br>
+
+        <input type="submit" value="Reservar">
+    </form>
+</body>
+</html>
