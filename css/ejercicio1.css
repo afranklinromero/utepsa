@@ -1,0 +1,32 @@
+main {
+    background-color: red;
+}
+
+body {
+    background-color: rgb(107, 107, 107)
+}
+
+.title {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.second-title {
+    color: white;
+}
+
+.title-container {
+    background-color: rgb(116, 116, 116);
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0.9;
+    margin: 10px;
+}
+
+.welcoming-title {
+    color: chartreuse;
+}
+
+.welcoming-message {
+    color: white;
+}

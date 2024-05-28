@@ -1,0 +1,27 @@
+.border-example {
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.solid {
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.dash {
+    border: 2px dashed black;
+    box-sizing: content-box;
+}
+
+.dot {
+    border: 2px dotted black;
+}
+
+.double {
+    border: 3px double black;
+}
+
+.title {
+    border-bottom: 2px solid black;
+}

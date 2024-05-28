@@ -1,0 +1,36 @@
+.title {
+    border-bottom: 2px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.item {
+    display: flex;          /* Use flexbox for the item */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: flex-start;    /* Center children horizontally */
+    padding: 20px;          /* Padding around each item */
+    width: 400px;           /* Width of each item */
+    text-align: center;     /* Center text inside each item */
+}
+
+.hover-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+}
+
+.hover-button:hover {
+    background-color: red;
+}
+
+.hover-button:active {
+    background-color: blue;
+}
+

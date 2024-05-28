@@ -1,0 +1,21 @@
+.title {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.main-container {
+    display: flex;
+    height: 320px;
+    background-color: red;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-item {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    font-size: 10em;
+    text-align: center;
+}
