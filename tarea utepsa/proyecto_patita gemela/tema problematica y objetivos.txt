@@ -1,0 +1,8 @@
+Tema:
+Desarrollar la aplicación patitas gemelas
+
+Problema General:
+Las dificultades en la adopción de mascotas, la localización de animales perdidos y la gestión de donaciones se agravan por el desconocimiento de las personas sobre estos problemas, resultando en procesos descoordinados y poco eficientes.
+
+Objetivo Específico:
+Crear "Patita Gemela", una app que centralice y facilite la adopción de mascotas, la localización de animales perdidos y la gestión de donaciones, aumentando la conciencia y eficiencia en estos procesos.

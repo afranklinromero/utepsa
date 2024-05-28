@@ -1,0 +1,30 @@
+body {
+    background-color: #8B0000; /* Color de fondo */
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 20px 0;
+}
+hr {
+    border: 1px solid white;
+    width: 80%;
+}
+.container {
+    background-color: #444; /* Color de fondo del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.container h2 {
+    color: lime; /* Color del texto */
+    margin: 0;
+}
+.container p {
+    color: lightgray; /* Color del párrafo */
+    margin: 5px 0 0;
+}
