@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.colored-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.colored-list li {
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(193, 191, 191);
+}
+
+.colored-list li:nth-child(odd) {
+    color: green;
+}
+
+.colored-list li:nth-child(even) {
+    color: orange;
+}
