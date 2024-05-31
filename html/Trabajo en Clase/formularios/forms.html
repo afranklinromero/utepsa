@@ -49,17 +49,25 @@
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
+                        <label for="email">Correo Electronico:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit">Enviar</button>
+                        <label for="password">Contrasena:</label>
+                        <input type="password" id="password" name="password" required> 
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Registrar</button>
                     </div>
                 </form>
             </div>
             <div class="form-container">
                 <h2>Formulario de Contacto</h2>
                     <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
                         <div class="form-group">
                             <label for="email">Correo Electronico:</label>
                             <input type="email" id="email" name="email" required>
@@ -97,6 +105,22 @@
                         <input type="radio" id="otro" name="otro" value="3">
                         <label for="otro">Otro</label><br>
                     </div>
+                        <label for="interests">Intereses:</label><br>
+                        <input type="checkbox" id="sports" name="interests" value="deportes">
+                        <label for="sports">Deportes</label><br>
+                        <input type="checkbox" id="music" name="interests" value="musica">
+                        <label for="music">Música</label><br>
+                        <input type="checkbox" id="technology" name="interests" value="tecnologia">
+                        <label for="technology">Tecnología</label><br><br>
+                        
+                        <label for="satisfaction">Nivel de satisfacción:</label><br>
+                        <select id="satisfaction" name="satisfaction">
+                            <option value="muy_satisfecho">Muy satisfecho</option>
+                            <option value="satisfecho">Satisfecho</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="insatisfecho">Insatisfecho</option>
+                            <option value="muy_insatisfecho">Muy insatisfecho</option>
+                        </select>
                 </form>
             </div>
 
@@ -119,7 +143,7 @@
                         <input type="date" id="FechaL" name="fechaDeSalida" required>
                     </div>
                     <div class="form-group">
-                        <label for="Huespedes">Numero de huespedes"</label>
+                        <label for="Huespedes">Numero de huespedes:</label>
                         <input type="number" id="Huespedes" name="numeroDeHuespedes" required>
                     </div>
                     <div class="form-group">
