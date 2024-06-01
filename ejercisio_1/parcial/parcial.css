@@ -1,0 +1,250 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+        /* ESTILO GENERAL */
+        body {
+            background-color: #565656; 
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ESTILO DEL HEADER */
+        header {
+            background-color: #8B0000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* CONTENIDO DEL MAIN */
+        main.content {
+            padding: 20px;
+        }
+
+        /* CARRUSEL STILO */
+        .carousel-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel-buttons button {
+            background-color: #8B0000; 
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .carousel-buttons button:hover {
+            background-color: #600000; 
+        }
+
+        .carousel-images {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .carousel-images div {
+            flex: 0 0 auto;
+            margin-right: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .carousel-images img {
+            max-height: 300px;
+            border: 2px solid #8B0000; 
+        }
+
+        .carousel-names {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* ESTILO DE TABLA DE EVENTOS*/
+        .events table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .events th, .events td {
+            border: 1px solid #8B0000; 
+            padding: 10px;
+            text-align: left;
+        }
+
+        .events th {
+            background-color: #8B0000;
+        }
+
+        .events details summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #8B0000; 
+        }
+
+        .events details[open] summary {
+            color: #600000; 
+        }
+
+        /* BIOGRAFIA ESTILOS */
+        .bio {
+            background-color: #8B0000; 
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .bio p {
+            color: #FFFFFF;
+        }
+
+        /* TESTIMONIO ESTILO */
+        .testimonials blockquote {
+            border-left: 5px solid #8B0000; 
+            padding-left: 10px;
+            margin: 20px 0;
+            color: #FFFFFF;
+        }
+
+        /* COMPRA DE VOLETOS ESTILO */
+        .ticket-purchase form {
+            background-color: #8B0000; 
+            padding: 20px;
+            border-radius: 10px;
+            color: #FFFFFF;
+        }
+
+        .ticket-purchase form label {
+            display: block;
+            margin-top: 10px;
+            color: #FFFFFF;
+        }
+
+        .ticket-purchase form input, .ticket-purchase form select, .ticket-purchase form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+        }
+
+        .ticket-purchase form button {
+            background-color: #600000; 
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .ticket-purchase form button:hover {
+            background-color: #8B0000; 
+        }
+
+        /* COMENTARIOS ESTILOS */
+        .feedback .comments {
+            margin-top: 20px;
+        }
+
+        .feedback .comment {
+            margin-bottom: 10px;
+        }
+
+        .feedback .comment p {
+            background-color: #565656; 
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .feedback form {
+            background-color: #8B0000; 
+            padding: 20px;
+            border-radius: 10px;
+            color: #FFFFFF;
+        }
+
+        .feedback form label {
+            display: block;
+            margin-top: 10px;
+            color: #FFFFFF;
+        }
+
+        .feedback form input, .feedback form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+        }
+
+        .feedback form button {
+            background-color: #600000; 
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .feedback form button:hover {
+            background-color: #8B0000; 
+        }
+
+        /* ESTILO DEL FOOTER*/
+        footer {
+            background-color: #8B0000; 
+            padding: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        footer .social-media a {
+            color: #FFFFFF;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
