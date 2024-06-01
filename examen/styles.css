@@ -1,0 +1,183 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3adad;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+header .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .menu ul li {
+    margin: 0 10px;
+}
+
+header .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#inicio .banner {
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover;
+    color: #290b0b;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Tabla de eventos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Formulario de contacto */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Comentarios */
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .menu {
+        display: none;
+    }
+
+    header .menu-hamburguesa {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .logo {
+        text-align: center;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    /* Agregar estilos para el menú hamburguesa */
+    header {
+        position: relative;
+    }
+
+    header .menu-hamburguesa {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1001; /* Asegura que esté por encima del contenido */
+        color: #3fc322; /* Ajusta el color del ícono */
+    }
+}
+@media (max-width: 768px) {
+    header .menu {
+        display: none;
+    }
+
+    header .menu-hamburguesa {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .logo {
+        text-align: center;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header .menu-hamburguesa {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
