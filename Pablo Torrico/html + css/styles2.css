@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff; /* White background color */
+    color: #000; /* Black text color */
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #000; /* Black line */
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.borders {
+    display: flex;
+    gap: 10px;
+}
+
+.borders div {
+    padding: 10px;
+    border: 2px solid;
+}
+
+.solid-border {
+    border-style: solid;
+}
+
+.dashed-border {
+    border-style: dashed;
+}
+
+.dotted-border {
+    border-style: dotted;
+}
+
+.double-border {
+    border-style: double;
+}

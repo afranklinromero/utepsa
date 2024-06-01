@@ -1,0 +1,58 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.contenedor > *{
+    box-shadow: -1px 1px 7px 0px rgb(0 0 0 /0.75);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template:
+    "nav"50px
+    "header"150px
+    "main"200px
+    "aside"auto
+    "footer"auto
+    ;
+}
+.nav {
+    background-color: red;
+    grid-area: nav;
+}
+.header {
+    background-color: green;
+    grid-area: header;
+}
+.main {
+    background-color: blue;
+    grid-area: main;
+}
+.aside {
+    background-color: yellow;
+    grid-area: aside;
+}
+.footer {
+    background-color: orange;
+    grid-area: footer;
+}
+ /* diseño para tablet */
+ @media(min-width: 760px){
+    .contenedor{
+        grid-template: 
+        "nav nav" 50px
+        "header header" 150px
+        "aside main" 200px
+        "footer footer"auto /
+        200px auto
+        ;
+    }
+ }

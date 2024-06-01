@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn, .btn-hover, .btn-active {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn {
+    background-color: #007BFF;
+}
+
+.btn-hover {
+    background-color: #004D40;
+}
+
+.btn-hover:hover {
+    background-color: #007BFF;
+}
+
+.btn-active {
+    background-color: #1E88E5;
+}
+
+.btn-active:hover {
+    background-color: #0000FF;
+}

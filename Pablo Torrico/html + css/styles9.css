@@ -1,0 +1,20 @@
+h1, h2 {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(52, 180, 59, 0.8);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
