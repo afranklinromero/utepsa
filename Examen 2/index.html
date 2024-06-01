@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Vega</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+    <!--En el navbar, se implementa el logo de Luis Vega: una "L," y igualmente se rellena con informacion para el y para el drop-down menu-->
+    <nav class="nav">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            &#9776;
+        </label>
+        <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <text x="20" y="80" font-family="Times New Roman" font-size="80" fill="white">L</text>
+        </svg>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#">Albums</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">La Chica Nice</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#">Tours</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">2012</a></li>
+                    <li><a href="#">2014</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2023</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#">Merch</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Poleras</a></li>
+                    <li><a href="#">Pantalones</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Zapatos</a></li>
+                    <li><a href="#">Hoodies</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#">VIP</a>
+            </li>
+        </ul> 
+   </nav> 
+
+   <!--El Header simplemente muestra un titulo-->
+   <header class="header">
+    <h1 class="title">Bienvenidos a mi Mundo!</h1>
+   </header>
+
+   <!--El Aside se usa para implementar un calendario, marcando ciertas fechas con un color para indicar un evento especial-->
+   <aside class="aside calendar">
+    <div class="calendar-header">
+        <h2>June 2024</h2>
+    </div>
+    <div class="calendar-body">
+        <div class="calendar-day">1</div>
+        <div class="calendar-day">2</div>
+        <div class="calendar-day">3</div>
+        <div class="calendar-day">4</div>
+        <div class="calendar-day">5</div>
+        <div class="calendar-day">6</div>
+        <div class="calendar-day">7</div>
+        <div class="calendar-day">8</div>
+        <div class="calendar-day">9</div>
+        <div class="calendar-day">10</div>
+        <div class="calendar-day">11</div>
+        <div class="calendar-day">12</div>
+        <div class="calendar-day">13</div>
+        <div class="calendar-day">14</div>
+        <div class="calendar-day">15</div>
+        <div class="calendar-day">16</div>
+        <div class="calendar-day">17</div>
+        <div class="calendar-day">18</div>
+        <div class="calendar-day">19</div>
+        <div class="calendar-day" style="color: white; background-color: rgb(60, 26, 255)">20</div>
+        <div class="calendar-day">21</div>
+        <div class="calendar-day">22</div>
+        <div class="calendar-day">23</div>
+        <div class="calendar-day">24</div>
+        <div class="calendar-day">25</div>
+        <div class="calendar-day">26</div>
+        <div class="calendar-day">27</div>
+        <div class="calendar-day">28</div>
+        <div class="calendar-day">29</div>
+        <div class="calendar-day" style="color: white; background-color: rgb(60, 26, 255)">30</div>
+    </div>
+   </aside>
+
+   <main class="main">
+    <img src="luisvega.jpeg" alt="Luis Vega">
+    <p>
+       Bienvenido damas y caballeros! Les comunico que aqui pueden encontrar en la parte "VIP" una licensia para poder utilizar una IA basada en mi voz para sus propias canciones o remixes! Este pequeno detalle seria para mis fans musiqueros igual que yo, y aqui es el unico lugar en donde lo pueden obtener! Con esta licensia, no van a tener ningun problema con el tema de derechos de copyright! Saludos!!
+    </p>
+   </main>
+
+   <footer class="footer">
+    <div class="form-container">
+    <h2>Formulario de Contacto</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <input type="text" id="mensaje" name="mensaje" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <div class="form-container">
+    <h2>Preferencias</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="encuesta">Edad:</label>
+                <input type="number" id="encuesta" name="encuesta">
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="masculino" name="masculino" value="1">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="femenino" name="femenino" value="2">
+                <label for="femenino">Femenino</label><br>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="otro" name="otro" value="3">
+                <label for="otro">Otro</label><br>
+            </div>
+                <label for="interests">Cuales canciones te gustaria escuchar en mis tours de este mes?</label><br>
+                <input type="checkbox" id="interests" name="interests" value="musica">
+                <label for="vad">Voy a Desaparecer</label><br>
+                <input type="checkbox" id="" name="cc" value="musica">
+                <label for="music">Contacto Cero</label><br>
+                <input type="checkbox" id="en" name="en" value="musica">
+                <label for="en">Enemigo</label><br><br>                
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+   </footer>
+</body>
+</html>
