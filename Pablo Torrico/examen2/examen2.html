@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Luis Vega</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Logo del artista -->
+        <div class="logo">
+            <img src="Logo2.png" alt="Logo de Luis Vega">
+        </div>
+        <!-- Menú horizontal para escritorio -->
+        <nav class="menu-horizontal">
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#works">Trabajos</a></li>
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#feedback">Comentarios</a></li>
+                <!--
+                <li>
+                     <a href="#">Menú</a>
+                    <ul class="submenu">
+                        <li><a href="#link1">Enlace 1</a></li>
+                        <li><a href="#link2">Enlace 2</a></li>
+                        <li><a href="#link3">Enlace 3</a></li>
+                        <li><a href="#link4">Enlace 4</a></li>
+                        <li><a href="#link5">Enlace 5</a></li>
+                    </ul>
+                </li>v -->
+            </ul>
+        </nav>
+        <!-- Menú vertical para tabletas -->
+        <div class="menu-vertical">
+            <img src="Logo2.png" alt="Logo de Luis Vega" class="vertical-logo">
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#works">Trabajos</a></li>
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#feedback">Comentarios</a></li>
+                <li>
+                    <a href="#">Menú</a>
+                    <ul class="submenu">
+                        <li><a href="#link1">Enlace 1</a></li>
+                        <li><a href="#link2">Enlace 2</a></li>
+                        <li><a href="#link3">Enlace 3</a></li>
+                        <li><a href="#link4">Enlace 4</a></li>
+                        <li><a href="#link5">Enlace 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Menú hamburguesa para móviles -->
+        <div class="menu-hamburguesa">
+            <input type="checkbox" id="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger-icon">☰</label>
+            <div class="hamburger-menu">
+                <ul>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#works">Trabajos</a></li>
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#feedback">Comentarios</a></li>
+                    <li>
+                        <a href="#">Menú</a>
+                        <ul class="submenu">
+                            <li><a href="#link1">Enlace 1</a></li>
+                            <li><a href="#link2">Enlace 2</a></li>
+                            <li><a href="#link3">Enlace 3</a></li>
+                            <li><a href="#link4">Enlace 4</a></li>
+                            <li><a href="#link5">Enlace 5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="contact-info">
+                    <p>Contacto: <a href="mailto:representante@ejemplo.com">representante@ejemplo.com</a></p>
+                </div>
+            </div>
+            <img src="Logo2.png" alt="Logo de Luis Vega" class="hamburger-logo">
+        </div>
+    </header>
+
+    <!-- Portada -->
+    <img class="img-1" src="Portada.png">
+
+    <!-- Sección de biografía -->
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Artista multidisciplinario español, nacido en Madrid en 1975. Con una trayectoria artística que abarca más de dos décadas, Luis ha logrado destacar en diversos campos de las artes visuales, incluyendo la pintura, la escultura y la instalación. Su trabajo se caracteriza por una profunda exploración de la condición humana, utilizando una variedad de materiales y técnicas para expresar sus ideas.</p>
+    </section>
+
+    <!-- Sección de trabajos -->
+    <section id="works">
+        <h2>Discografias</h2>
+        <div class="gallery">
+            <div class="work">
+                <img src="cancion3.jpg" alt="Descripción de la obra 1">
+                <p>Ver más regalos como merchandising</p>
+            </div>
+            <div class="work">
+                <img src="cancion2.jpg" alt="Descripción de la obra 2">
+                <p>Ver más regalos como poleras</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de eventos -->
+    <section id="events">
+        <h2>Eventos de Junio</h2>
+        <table>
+            <tr>
+                <th>Fecha</th>
+                <th>Evento</th>
+                <th>Lugar</th>
+            </tr>
+            <tr>
+                <td>1 Junio</td>
+                <td>Concierto en Ciudad A</td>
+                <td>Auditorio Nacional</td>
+            </tr>
+            <tr>
+                <td>10 Junio</td>
+                <td>Feria del Libro</td>
+                <td>Centro Cultural</td>
+            </tr>
+            <tr>
+                <td>15 Junio</td>
+                <td>Exposición de Arte</td>
+                <td>Galería de Arte Moderno</td>
+            </tr>
+            <tr>
+                <td>20 Junio</td>
+                <td>Conferencia</td>
+                <td>Universidad de B</td>
+            </tr>
+            <tr>
+                <td>30 Junio</td>
+                <td>Cierre de Temporada</td>
+                <td>Teatro Principal</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Sección de comentarios -->
+    <section id="feedback">
+        <h2>Comentarios</h2>
+        <form action="mailto:tu_email@ejemplo.com" method="post" enctype="text/plain">
+            <label for="feedback-name">Nombre:</label>
+            <input type="text" id="feedback-name" name="feedback-name">
+            
+            <label for="feedback-email">Email:</label>
+            <input type="email" id="feedback-email" name="feedback-email">
+
+            <label for="genre">Género favorito:</label>
+            <select id="genre" name="genre">
+                <option value="pop">Pop</option>
+                <option value="rock">Balada</option>
+                <option value="jazz">Ranchera</option>
+                <option value="classical">Dueto</option>
+            </select>
+            
+            <label for="feedback-message">Comentario:</label>
+            <textarea id="feedback-message" name="feedback-message"></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/luisVegaOficiall" target="_blank">
+                <img class="img3" img src="face.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/luisvega_oficial/" target="_blank">
+                <img class="img3" src="ins1.webp" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

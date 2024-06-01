@@ -1,0 +1,350 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: black;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el logo en el encabezado */
+header .logo img {
+    height: 50px;
+    margin-left: 1em;
+}
+
+/* Estilos para el menú horizontal en escritorio */
+nav.menu-horizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav.menu-horizontal ul li {
+    margin: 0 1em;
+    position: relative;
+}
+
+nav.menu-horizontal ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.menu-horizontal ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilos para el submenú en el menú horizontal */
+nav.menu-horizontal ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4CAF50;
+    padding: 0;
+}
+
+nav.menu-horizontal ul li:hover ul.submenu {
+    display: block;
+}
+
+nav.menu-horizontal ul li ul.submenu li {
+    margin: 0;
+}
+
+nav.menu-horizontal ul li ul.submenu li a {
+    color: white;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+nav.menu-horizontal ul li ul.submenu li a:hover {
+    background-color: #333;
+}
+
+/* Estilos para el menú vertical en tabletas */
+.menu-vertical {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 2em;
+}
+
+.menu-vertical .vertical-logo {
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+.menu-vertical ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-vertical ul li {
+    margin: 1em 0;
+    position: relative;
+}
+
+.menu-vertical ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-vertical ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilos para el submenú en el menú vertical */
+.menu-vertical ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    background-color: #4CAF50;
+    padding: 0;
+}
+
+.menu-vertical ul li:hover ul.submenu {
+    display: block;
+}
+
+.menu-vertical ul li ul.submenu li {
+    margin: 0;
+}
+
+.menu-vertical ul li ul.submenu li a {
+    color: white;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+.menu-vertical ul li ul.submenu li a:hover {
+    background-color: #333;
+}
+
+/* Estilos para el menú hamburguesa en móviles */
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-hamburguesa #hamburger-toggle {
+    display: none;
+}
+
+.menu-hamburguesa .hamburger-icon {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.menu-hamburguesa .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding-top: 1em;
+}
+
+.menu-hamburguesa #hamburger-toggle:checked + .hamburger-icon + .hamburger-menu {
+    display: flex;
+}
+
+.menu-hamburguesa ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-hamburguesa ul li {
+    margin: 1em 0;
+    position: relative;
+}
+
+.menu-hamburguesa ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-hamburguesa ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilos para el submenú en el menú hamburguesa */
+.menu-hamburguesa ul li ul.submenu {
+    display: none;
+    position: relative;
+    background-color: #4CAF50;
+    padding: 0;
+}
+
+.menu-hamburguesa ul li:hover ul.submenu {
+    display: block;
+}
+
+.menu-hamburguesa ul li ul.submenu li {
+    margin: 0;
+}
+
+.menu-hamburguesa ul li ul.submenu li a {
+    color: white;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+.menu-hamburguesa ul li ul.submenu li a:hover {
+    background-color: #333;
+}
+
+.menu-hamburguesa .contact-info {
+    margin-top: 1em;
+    color: white;
+}
+
+.menu-hamburguesa .contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-hamburguesa .contact-info a:hover {
+    color: #ddd;
+}
+
+.menu-hamburguesa .hamburger-logo {
+    height: 50px;
+    margin-top: 1em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .menu-horizontal {
+        display: none;
+    }
+    .menu-vertical {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-vertical {
+        display: none;
+    }
+    .menu-hamburguesa {
+        display: flex;
+    }
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 2em;
+}
+
+/* Estilos para la galería de trabajos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.img-1 {
+    width: 100%;
+    height: 36rem;
+}
+.work {
+    flex: 1 1 calc(33.333% - 1em);
+    box-sizing: border-box;
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea, form select {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    margin-top: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+/* Estilos para la sección de preferencias */
+section#preferences {
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Estilos para la tabla de eventos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 1em;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+/* FOOTER */
+
+.img3 {
+    width: 5rem;
+    height: 5rem;
+    padding-left: 30px;
+}
