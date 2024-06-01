@@ -1,0 +1,45 @@
+ body{
+    background-color: white;
+ }
+.caja{
+    background-color: red;
+    padding: 20px;
+    width: 550px;
+    height: 280px;
+    border: none;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.centrado{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 550px;
+    height: 160px;
+    align-content: space-around;
+    border: none;
+    border-radius: 7px;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.centrado h2{
+    color: rgb(64, 215, 64);
+    padding: 10px;
+    
+}
+.centrado p {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}

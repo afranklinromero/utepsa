@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+}
+
+.cajaCentral {
+    background-color: white;
+    padding: 20px;
+    width: 600px; 
+    margin: 50px auto;
+}
+
+.centrado {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.centrado .element1, .element2, .element3, .element4 {
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px; 
+    height: 30px; 
+    
+}
+
+.element1 {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.element2 {
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+.element3 {
+    border-color: black;
+    border-width: 2px;
+    border-style: dotted;
+}
+
+.element4 {
+    border-color: black;
+    border-width: 2px;
+    border-style: double;
+}

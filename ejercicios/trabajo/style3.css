@@ -1,0 +1,29 @@
+body{
+    background-color: white;
+}
+.central{
+    background-color:blanchedalmond;
+    height: 400px;
+    width: 400px;
+    
+}
+.central .h1, .h2{
+    color: red;
+}
+.centralContenedor{
+    display: flex;
+    justify-content: space-between;
+   
+    text-align:center;
+}
+.centralContenedor .contenedor1, .contenedor2, .contenedor3{
+    display:grid;
+    background-color: green;
+    padding: 1;
+    width: 100px;
+    height: 150px;
+    grid-gap: 10px;
+    color: #ddd;
+    padding: 0px;
+    font-size: 90px;
+}

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text"id="nombre" name="nombre" required>
+                <hr>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email"id="email" name="email" required>
+                <hr>
+            </div>
+            <div>
+                <label for="number">number:</label>
+                <input type="number"id="number" name="number" required>
+                <hr>   
+            </div>
+            <div>
+                <label for="password">password:</label>
+                <input type="password"id="password" name="password" required>
+                <hr>
+            </div>  
+               <hr>
+                <button type="submit">Registrar</button>
+        </div>  
+    </form>
+    <h2>Formulario de Contacto</h2>
+    <form action="/submit_contact" method="POST">
+        <div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text"id="nombre" name="nombre" required>
+                <hr>
+            </div>
+            <div>
+                <label for="Correo">Email:</label>
+                <input type="email"id="email" name="email" required>
+                <hr>
+            </div>
+            <div>
+                <label for="Asunto">Asunto:</label>
+                <input type="text"id="text" name="text" required>
+                <hr>
+            </div>
+            <div>
+                <label for="textarea">descripcion:</label>
+                <input type="textarea"id="textarea" name="textarea" required>
+                <hr>
+            </div>  
+               <hr>
+                <button type="submit">Enviar</button>
+        </div>  
+    </form>
+    <h1>Formulario de Encuesta</h1>
+    <form>
+        <label for="edad">Edad:</label><br>
+        <input type="text" id="edad" name="edad"><br>
+        <label>Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label><br>
+        <label>Intereses:</label><br>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+        <label for="deportes">Deportes</label><br>
+        <input type="checkbox" id="musica" name="intereses" value="musica">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+        <label for="tecnologia">Tecnología</label><br>
+        <label for="satisfaccion">Nivel de satisfacción:</label><br>
+        <select id="satisfaccion" name="satisfaccion">
+            <option value="muy_satisfecho">Muy Satisfecho</option>
+            <option value="muy_satisfecho">Muy Mal</option>
+        </select><br>
+        <input type="submit" value="Enviar">
+    </form>>
+    <h1>Formulario de Reserva de Hotel</h1>
+    <form>
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="arrival">Fecha de llegada:</label><br>
+        <input type="date" id="arrival" name="arrival"><br>
+        <label for="departure">Fecha de salida:</label><br>
+        <input type="date" id="departure" name="departure"><br>
+        <label for="guests">Número de huéspedes:</label><br>
+        <input type="number" id="guests" name="guests"><br>
+        <label for="room">Tipo de habitación:</label><br>
+        <select id="room" name="room">
+            <option value="individual">Individual</option>
+            <option value="double">Habitación Doble</option>
+        </select><br>
+        <input type="submit" value="Reservar">
+    </form>
+
+</body>
+</html>

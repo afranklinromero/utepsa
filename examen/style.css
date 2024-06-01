@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+.body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+.contenedor > *{
+    box-shadow: -1px 1px 7px 0px rgb(0 0 0/0.75);
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "nav" 100px
+    "header" 200px
+    "main" 500px
+    "footer" auto
+    ;
+}
+.nav{
+    background-color: rgba(165, 41, 19, 0.834);
+    grid-area: nav;
+}
+.header{
+    background-color: whitesmoke;
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+
+.footer{
+    background-color: rgb(103, 21, 21);
+    grid-area: footer;
+}
+/* diseño para tablet*/
+@media(min-width: 760px){
+    .contenedor{
+        grid-template: 
+        "nav nav" 50px
+        "header" 150px
+        "main" 200px
+        "footer footer" auto /
+        200px auto
+        ;
+    }
+}
+.central-top{
+    width: 100%;
+    align-items: end;
+    padding: 0%;
+    margin-left: auto;
+}
+
+.central-top .topbar{
+    flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #a15b5b;
+    border-bottom: 1px solid #ddd;
+}
+
+.location-button{
+    height: 15px;
+    width: 100px;
+    align-items:center;
+    padding: 0%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(165, 41, 19, 0.834);
+    border-bottom: 15px;
+}
+.logo img {
+    height: 50px;
+}
+.bottom-menu{
+    width: 100px;
+    align-items:self-start;
+    padding: 0%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.imgviajes img{
+    height: 90px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#contenItemsCarrusel{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.itemCarrusel{
+    height: 500px;
+    position: relative;
+    top: 0;
+    transition: left 5s ease-in-out;
+}
+.tarjetaCarrusel{
+    width: 100%;
+    height: 100%;
+}
+.tarjetaCarrusel img{
+    size: 200px;
+    width: 100%;
+    height: 100%;
+    border-radius: var(50,50);
+    object-fit:fill;
+}
+.flechasCarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.flechasCarrusel a {
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 50%;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: black;
+}
+#contePuntos {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#contePuntos > a {
+    font-size: 2em;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+}
+.encajeCental{
+    justify-content: space-around;
+    justify-items: start;
+    flex-direction: row;
+    padding: 10px 0;
+    display:flex;
+    margin-left: 5;
+}
+.encaje1{
+    width: 200px;
+}
+.encaje2{
+    width: 300px;
+}

@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #000;
+}
+
+.subtitulo {
+    color: red;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+   
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
