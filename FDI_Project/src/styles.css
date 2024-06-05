@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.container > * {
+    box-shadow: -1px 1px 7px 0px rgb(0 0 0 /0.75);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "nav" 50px 
+    "header" 150px 
+    "main" 200px 
+    "aside" auto
+    "footer" auto;
+}
+
+.nav {
+    background-color: red;
+    grid-area: nav;
+}
+
+.header {
+    background-color: green;
+    grid-area: header;
+}
+
+.main {
+    background-color: blue;
+    grid-area: main;
+}
+
+.aside {
+    background-color: yellow;
+    grid-area: aside;
+}
+
+.footer {
+    background-color: coral;
+    grid-area: footer;
+}
+
+/* build design for phones */
+@media(max-width: 600px) {
+    .container {
+        grid-template: 
+        "nav nav" 50px 
+        "header header" 100px 
+        "main main" 200px 
+        "aside aside" 200px
+        "footer footer" auto / 200px auto;
+    }
+}
+
+/* build design for tablets */
+@media(min-width: 600px) {
+    .container {
+        grid-template: 
+        "nav nav" 50px 
+        "header header" 100px 
+        "aside main" 400px 
+        "footer footer" auto / 200px auto;
+    }
+}
+
+/* build design for laptops/desktop*/
+@media(min-width: 1200px) {
+    .container {
+        grid-template: 
+        "nav header header" 100px
+        "nav aside main" 500px
+        "nav footer footer" auto / 150px auto;
+    }
+}
