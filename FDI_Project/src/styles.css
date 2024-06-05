@@ -1,3 +1,19 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nantes-Regular;
+  src: url(../public/Nantes-Regular.woff2);
+}
+
+@font-face {
+    font-family: Nantes-Light;
+    src: url(../public/Nantes-Light.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +25,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Nantes-Regular;
     font-size: 1.2rem;
     min-height: 100%;
 }
@@ -56,6 +72,567 @@ body {
     background-color: coral;
     grid-area: footer;
 }
+
+.main-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-page .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 2860px;
+  position: relative;
+}
+
+.main-page .footer {
+  position: absolute;
+  width: 1440px;
+  height: 991px;
+  top: 1869px;
+  left: -1px;
+  background-color: transparent;
+}
+
+.main-page .contact-us {
+  position: absolute;
+  width: 606px;
+  height: 729px;
+  top: 91px;
+  left: 114px;
+}
+
+.main-page .campos {
+  position: absolute;
+  width: 487px;
+  height: 485px;
+  top: 123px;
+  left: 31px;
+}
+
+.main-page .overlap {
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  top: -1px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .text-wrapper {
+  position: absolute;
+  width: 468px;
+  top: 31px;
+  left: 13px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .overlap-group {
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  top: 89px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .div-wrapper {
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  top: 179px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .rectangle {
+  top: 256px;
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .rectangle-2 {
+  top: 333px;
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .rectangle-3 {
+  top: 415px;
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .text-wrapper-2 {
+  position: absolute;
+  width: 267px;
+  top: 14px;
+  left: 31px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .enviar-asunto {
+  position: absolute;
+  width: 288px;
+  height: 65px;
+  top: 636px;
+  left: 128px;
+}
+
+.main-page .overlap-2 {
+  position: relative;
+  width: 286px;
+  height: 65px;
+  background-color: #000000;
+  border-radius: 90px;
+}
+
+.main-page .text-wrapper-3 {
+  position: absolute;
+  width: 220px;
+  top: 14px;
+  left: 33px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .socials {
+  position: absolute;
+  width: 272px;
+  height: 125px;
+  top: 708px;
+  left: 988px;
+}
+
+.main-page .text-wrapper-4 {
+  position: absolute;
+  width: 141px;
+  top: 901px;
+  left: 44px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .happy-black-woman {
+  position: absolute;
+  width: 629px;
+  height: 420px;
+  top: 283px;
+  left: 755px;
+  object-fit: cover;
+}
+
+.main-page .overlap-3 {
+  position: absolute;
+  width: 1440px;
+  height: 1806px;
+  top: 0;
+  left: 0;
+}
+
+.main-page .information-section {
+  position: absolute;
+  width: 1440px;
+  height: 799px;
+  top: 1007px;
+  left: 0;
+}
+
+.main-page .information {
+  position: absolute;
+  width: 1125px;
+  height: 363px;
+  top: 299px;
+  left: 158px;
+}
+
+.main-page .images-container {
+  position: absolute;
+  width: 1122px;
+  height: 84px;
+  top: 22px;
+  left: 3px;
+}
+
+.main-page .location {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 10px;
+  left: 0;
+  object-fit: cover;
+}
+
+.main-page .search {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 10px;
+  left: 400px;
+  object-fit: cover;
+}
+
+.main-page .pin {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 10px;
+  left: 779px;
+  object-fit: cover;
+}
+
+.main-page .text-wrapper-5 {
+  position: absolute;
+  width: 320px;
+  top: 106px;
+  left: 0;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .text-wrapper-6 {
+  position: absolute;
+  width: 320px;
+  top: 106px;
+  left: 402px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .text-wrapper-7 {
+  position: absolute;
+  width: 320px;
+  top: 106px;
+  left: 779px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .p {
+  position: absolute;
+  width: 321px;
+  top: 165px;
+  left: 1px;
+  font-family: "Nantes-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main-page .text-wrapper-8 {
+  position: absolute;
+  width: 321px;
+  top: 165px;
+  left: 401px;
+  font-family: "Nantes-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main-page .text-wrapper-9 {
+  position: absolute;
+  width: 321px;
+  top: 165px;
+  left: 779px;
+  font-family: "Nantes-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main-page .start-now-button {
+  position: absolute;
+  width: 517px;
+  height: 87px;
+  top: 124px;
+  left: 461px;
+  background-color: #000000;
+  border-radius: 90px;
+}
+
+.main-page .text-wrapper-10 {
+  position: absolute;
+  width: 357px;
+  top: 14px;
+  left: 77px;
+  font-family: "Nantes-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .menu-pop-up {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.main-page .overlap-4 {
+  position: relative;
+  height: 966px;
+}
+
+.main-page .background-image {
+  position: absolute;
+  width: 1296px;
+  height: 966px;
+  top: 0;
+  left: 6%;
+  object-fit: cover;
+  border-bottom-left-radius: 7%;
+  border-bottom-right-radius: 7%;
+}
+
+.main-page .nav-bar {
+  position: absolute;
+  width: 1440px;
+  height: 88px;
+  top: 0;
+  left: 0;
+}
+
+.main-page .title {
+  position: absolute;
+  width: 290px;
+  height: 73px;
+  top: 15px;
+  left: 93px;
+}
+
+.main-page .text-wrapper-11 {
+  position: absolute;
+  width: 215px;
+  top: 17px;
+  left: 73px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .title-icon {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.main-page .menu-button {
+  position: absolute;
+  width: 171px;
+  height: 51px;
+  top: 26px;
+  left: 1160px;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+
+.main-page .overlap-group-2 {
+  position: relative;
+  width: 169px;
+  height: 51px;
+  background-color: #000000;
+  border-radius: 17px;
+  transition: 0.3s linear;
+}
+
+.main-page .overlap-group-2:hover {
+    background-color: rgb(71, 71, 71);
+    transition: 0.3s linear;
+}
+
+.main-page .MB-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 4px;
+  left: 119px;
+  object-fit: cover;
+}
+
+.main-page .text-wrapper-12 {
+  position: absolute;
+  width: 104px;
+  top: 7px;
+  left: 15px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+.menu-pop-up .text-wrapper-13 {
+    position: absolute;
+    width: 684px; 
+    top: 220px;
+    left: 25%;
+    font-family: "Nantes-Regular", Helvetica;
+    font-weight: 400;
+    color: white;
+    font-size: 96px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.menu-pop-up .text-wrapper-14 {
+    position: absolute;
+    width: 684px; 
+    top: 380px;
+    left: 25%;
+    font-family: "Nantes-Regular", Helvetica;
+    font-weight: 400;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* Ensure the button is focusable */
+.menu-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none; /* Remove default focus outline */
+}
+
+/* Initially hide the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 83%;
+    background-color: black;
+    color: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Show the dropdown menu when the button is focused */
+.menu-button:focus + .dropdown-menu,
+.menu-button:focus-within + .dropdown-menu {
+    display: block;
+}
+
+/* Style the dropdown items */
+.dropdown-menu li {
+    padding: 10px 20px;
+    white-space: nowrap; /* Prevent items from wrapping */
+}
+
+/* Style the links */
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(30, 30, 30);
+}
+
 
 /* build design for phones */
 @media(max-width: 600px) {
