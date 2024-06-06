@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apuntes</title>
-    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="notes.css"> <!-- Vinculo al CSS para el editor de texto -->
 </head>
 <body>
-    <div class="notes" id="app">
-        <div class="notes__sidebar">
-            <button class="notes__add" type="button">Nuevo Apunte</button>
-            <div class="notes__list">
-                <div class="notes__list-item notes__list-item--selected">
-                    <div class="notes__small-title">Apuntes de Clases</div>
-                    <div class="notes__small-body">Hoy no aprendi nada.</div>
-                    <div class="notes__small-updated">Jueves 3:30pm</div>
+    <div class="notes" id="app"> <!-- Contenedor principal para la aplicacion de apuntes -->
+        <div class="notes__sidebar"> <!-- Sidebar -->
+            <button class="notes__add" type="button">Nuevo Apunte</button> <!-- Boton para crear un nuevo apunte -->
+            <div class="notes__list"> <!-- Contenedor para la lista de apuntes -->
+                <div class="notes__list-item notes__list-item--selected"> <!-- Item de apunte individual, marcado como seleccionado -->
+                    <div class="notes__small-title">Apuntes de Clases</div> <!-- Titulo del apunte -->
+                    <div class="notes__small-body">Hoy no aprendi nada.</div> <!-- Preview del body del apunte -->
+                    <div class="notes__small-updated">Jueves 3:30pm</div> <!-- Fecha de la ultima modificacion -->
                 </div>
             </div>
         </div>
-        <div class="notes__preview">
-            <input class="notes__title" type="text" placeholder="Ingresar un titlo...">
-            <textarea class="notes__body">Lorem ipsum dolor sit amet...</textarea>
+        <div class="notes__preview"> <!-- Area principal para preview y editar el apunte seleccionado -->
+            <input class="notes__title" type="text" placeholder="Ingresar un titlo..."> <!-- Campo de ingreso para el titulo del apunte -->
+            <textarea class="notes__body">Lorem ipsum dolor sit amet...</textarea> <!-- Campo de ingreso para el body del apunte -->
         </div>
     </div> 
-    <script src="notes.js" type="module"></script>
+    <script src="notes.js" type="module"></script> <!-- Vinculo al archivo de js para esta pagina -->
 </body>
 </html>
