@@ -453,6 +453,7 @@ body {
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  transition: 0.3s color; /* Animacion para cambiar el color del texto del titulo a gris en hover */
 }
 
 .main-page .title-icon {
@@ -462,6 +463,10 @@ body {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+.main-page .text-wrapper-11:hover {
+  color: grey;
 }
 
 .main-page .menu-button {
@@ -475,7 +480,6 @@ body {
   cursor: pointer;
 }
 
-
 .main-page .overlap-group-2 {
   position: relative;
   width: 169px;
@@ -485,11 +489,6 @@ body {
   transition: 0.3s linear;
 }
 
-.main-page .overlap-group-2:hover {
-    background-color: rgb(71, 71, 71);
-    transition: 0.3s linear;
-}
-
 .main-page .MB-icon {
   position: absolute;
   width: 40px;
@@ -497,7 +496,18 @@ body {
   top: 4px;
   left: 119px;
   object-fit: cover;
+  transition: 1.5s cubic-bezier(0.37, 0, 0.63, 1); /* Aplicando animacion para el icono del boton del menu */
 }
+
+.main-page .overlap-group-2:hover { /* Cambiar el color del boton menu cuando el mouse esta hovering */
+    background-color: rgb(71, 71, 71);
+    transition: 0.3s linear;
+}
+
+.main-page .overlap-group-2:hover .MB-icon {
+  transform: rotateY(720deg); /* Rotar el icono del boton menu 720 grados en su eje Y */
+}
+
 
 .main-page .text-wrapper-12 {
   position: absolute;
@@ -515,6 +525,15 @@ body {
 }
 
 
+@keyframes fadeIn { /* Keyframes de animacion para el titulo y subtitulo */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .menu-pop-up .text-wrapper-13 {
     position: absolute;
     width: 684px; 
@@ -528,6 +547,10 @@ body {
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
+
+    opacity: 0;
+    animation: fadeIn 900ms ease-out forwards;
+    animation-delay: 100ms;
 }
 
 .menu-pop-up .text-wrapper-14 {
@@ -542,62 +565,94 @@ body {
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
+
+    opacity: 0;
+    animation: fadeIn 900ms ease-out forwards;
+    animation-delay: 700ms;
 }
 
-/* Ensure the button is focusable */
+/* Boton del menu */
 .menu-button {
     position: relative;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    outline: none; /* Remove default focus outline */
+    outline: none; 
 }
 
-/* Initially hide the dropdown menu */
+/* Inicialmente esconder el menu */
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 87%; /* Position below the button */
-    left: 83%;
+    top: 87%; /* Posicionar abajo del boton menu */
+    left: 82%;
+    width: 9%;
     background-color: black;
     color: white;
     list-style: none;
     padding: 10px 0;
     margin: 0;
     border-radius: 5px;
-    z-index: 1000; /* Ensure it appears above other content */
+    z-index: 1000; /* Asegura que el menu se muestra al frente de otros objetos */
 }
-
-/* Show the dropdown menu when the button is focused */
-/* .menu-button:focus + .dropdown-menu,
-.menu-button:focus-within + .dropdown-menu {
-    display: block;
-} */
 
 .menu-button:hover + .dropdown-menu,
 .dropdown-menu:hover {
   display: block;
 }
 
-        
 
-/* Style the dropdown items */
+/* Estilar los items del menu */
 .dropdown-menu li {
     padding: 10px 20px;
-    white-space: nowrap; /* Prevent items from wrapping */
+    white-space: nowrap; /* Preveer que los items esten wrapped */
 }
 
-/* Style the links */
+/* Estilar los links */
 .dropdown-menu a {
     color: white;
     text-decoration: none;
+    transition: color 0.2s ease-out;
 }
 
 .dropdown-menu a:hover {
-    background-color: rgb(30, 30, 30);
+    background-color: transparent;
+    color: grey; /* Cambiar el color de los items del menu a gris en hover */
 }
+
 
 .footer-icon {
-  width: 10%;
+  width: 15%;
 }
 
+.footer-text {
+  color: white;
+}
+
+/* Estilar el boton para subir */
+#backToTopBtn {
+    display: none; /* Escondido por defecto */
+    position: fixed; /* Posicion fixed */
+    bottom: 20px; /* 20px de la parte de abajo de la pantalla */
+    right: 20px; /* 20px de la derecha */
+    z-index: 1000; /* Asegurando que esta por encima de otros elementos */
+    background-color: #4c4c4c; 
+    color: #fff; 
+    border: none; /* Eliminar border */
+    padding: 15px; /* Padding */
+    border-radius: 10px; /* Border radius consistente con el resto del sitio */
+    cursor: pointer; /* Pointer cursor en hover */
+    font-size: 18px; /* Tamano de la fuente */
+    opacity: 0; /* Opacidad para la animacion */
+    transition: opacity 0.3s ease; /* Animacion smooth para la transicion */
+}
+
+/* Estado visible */
+#backToTopBtn.show {
+    display: block;
+    opacity: 1; /* Visible completamente para la animacion */
+}
+
+#backToTopBtn:hover {
+    background-color: #3d3d3d; /* Background mas oscuro en hover */
+}
