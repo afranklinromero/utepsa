@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apuntes</title>
     <link rel="stylesheet" href="{{ asset('css/notes.css') }}"> <!-- Vinculo al CSS para el editor de texto -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 {{--     @extends('layouts.app') --}}
-@section('content')
+{{-- @section('content') --}}
 <div class="notes" id="app"> <!-- Contenedor principal para la aplicacion de apuntes -->
     <div class="notes__sidebar"> <!-- Sidebar -->
-        <a href="{{ route('notes.create') }}"><button class="notes__add" type="button">Nuevo Apunte</button></a> <!-- Boton para crear un nuevo apunte -->
+        <button class="notes__add" type="button">Nuevo Apunte</button> <!-- Boton para crear un nuevo apunte -->
         <div class="notes__list"> <!-- Contenedor para la lista de apuntes -->
             @foreach($notes as $note)
-            <div class="notes__list-item"> <!-- Item de apunte individual -->
-                <a href="{{ route('notes.show', $note->id) }}"><div class="notes__small-title">{{ $note->title }}</div></a> <!-- Titulo del apunte -->
-                <a href="{{ route('notes.edit', $note->id) }}"><div class="notes__small-body">{{ Str::limit($note->body, 50) }}</div></a> <!-- Preview del body del apunte -->
+            <div class="notes__list-item" data-id="{{ $note->IDNota }}"> <!-- Item de apunte individual -->
+                <div class="notes__small-title">{{ $note->Titulo }}</div> <!-- Titulo del apunte -->
+                <div class="notes__small-body">{{ Str::limit($note->Contenido, 50) }}</div> <!-- Preview del body del apunte -->
                 <div class="notes__small-updated">{{ $note->updated_at->format('l g:iA') }}</div> <!-- Fecha de la ultima modificacion -->
+                <button class="notes__delete" type="button">Eliminar</button> <!-- Boton para eliminar-->
             </div>
             @endforeach
         </div>
     </div>
     <div class="notes__preview"> <!-- Area principal para preview y editar el apunte seleccionado -->
-        @isset($note)
-            <input class="notes__title" type="text" value="{{ $note->title }}" placeholder="Ingresar un titulo..." readonly> <!-- Campo de ingreso para el titulo del apunte -->
-            <textarea class="notes__body" placeholder="Lorem ipsum dolor sit amet..." readonly>{{ $note->body }}</textarea> <!-- Campo de ingreso para el body del apunte -->
-        @endisset
+        <input class="notes__title" type="text" placeholder="Ingresar un titulo..."> <!-- Campo de ingreso para el titulo del apunte -->
+        <textarea class="notes__body" placeholder="Lorem ipsum dolor sit amet..."></textarea> <!-- Campo de ingreso para el body del apunte -->
+        <button class="notes__save" type="button">Guardar</button>
     </div>
 </div>
-@endsection
-    <script src="{{ asset('js/notes.ts') }}" type="module"></script> <!-- Vinculo al archivo de js para esta pagina -->
+{{-- @endsection --}}
+    <script src="{{ asset('js/notes.js') }}"></script> <!-- Vinculo al archivo de js para esta pagina -->
 </body>
 </html>

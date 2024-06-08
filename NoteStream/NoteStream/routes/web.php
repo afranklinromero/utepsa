@@ -12,7 +12,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('dashboard');
     })->name('dashboard');
 
-    Route::resource('notes', NotesController::class);
+    Route::resource('notes', NotesController::class)->except(['create', 'edit']);
 });
 
 Route::middleware('auth')->group(function () {
