@@ -9,7 +9,17 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("Login con exito!") }} <a href="{{ asset('notes.blade.php') }}">Click aqui para ingresar a tomar apuntes.</a>
+                    {{ __("Login con exito!") }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900">
+                    <a href="{{ route('notes.index') }}">Click aqui para ingresar a tomar apuntes.</a>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 <?php
+// app/Models/Notas.php
 
 namespace App\Models;
 
@@ -12,12 +13,12 @@ class Notas extends Model
     protected $table = 'notas';
 
     protected $fillable = [
-        'title',
-        'content',
-        'user_id',
+        'Titulo',  // Updated to match migration
+        'Contenido',  // Updated to match migration
+        'IDUsuario',  // Updated to match migration
     ];
 
     public function user() {
-        return $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(User::class, 'IDUsuario');
     }
 }
