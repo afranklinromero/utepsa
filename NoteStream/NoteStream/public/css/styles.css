@@ -1,0 +1,658 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nantes-Regular;
+  src: url(../fonts/Nantes-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Nantes-Light;
+    src: url(../fonts/Nantes-Light.woff2) format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Nantes-Regular;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+
+.main-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-page .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: 2000px;
+  position: relative;
+}
+
+.main-page .footer {
+  position: absolute;
+  width: 100%;
+  top: 1869px;
+  background-color: black;
+}
+
+.main-page .contact-us {
+  position: absolute;
+  width: 606px;
+  height: 729px;
+  top: 91px;
+  left: 114px;
+}
+
+.main-page .campos {
+  position: absolute;
+  width: 487px;
+  height: 485px;
+  top: 123px;
+  left: 31px;
+}
+
+.main-page .overlap {
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  top: -1px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .text-wrapper {
+  position: absolute;
+  width: 468px;
+  top: 31px;
+  left: 13px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .overlap-group {
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  top: 89px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .div-wrapper {
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  top: 179px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .rectangle {
+  top: 256px;
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .rectangle-2 {
+  top: 333px;
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .rectangle-3 {
+  top: 415px;
+  position: absolute;
+  width: 483px;
+  height: 71px;
+  left: -1px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.main-page .text-wrapper-2 {
+  position: absolute;
+  width: 267px;
+  top: 14px;
+  left: 31px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .enviar-asunto {
+  position: absolute;
+  width: 288px;
+  height: 65px;
+  top: 636px;
+  left: 128px;
+}
+
+.main-page .overlap-2 {
+  position: relative;
+  width: 286px;
+  height: 65px;
+  background-color: #000000;
+  border-radius: 90px;
+}
+
+.main-page .text-wrapper-3 {
+  position: absolute;
+  width: 220px;
+  top: 14px;
+  left: 33px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .socials {
+  position: absolute;
+  width: 272px;
+  height: 125px;
+  top: 708px;
+  left: 988px;
+}
+
+.main-page .text-wrapper-4 {
+  position: absolute;
+  width: 141px;
+  top: 901px;
+  left: 44px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .happy-black-woman {
+  position: absolute;
+  width: 629px;
+  height: 420px;
+  top: 103px;
+  left: 670px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.main-page .overlap-3 {
+  position: absolute;
+  width: 1440px;
+  height: 1806px;
+  top: 0;
+  left: 0;
+}
+
+.main-page .information-section {
+  position: absolute;
+  width: 100%;
+  height: 799px;
+  top: 1007px;
+  left: 0;
+}
+
+.main-page .information {
+  position: absolute;
+  width: 100%;
+  height: 363px;
+  top: 299px;
+  left: 15%;
+}
+
+.main-page .images-container {
+  position: absolute;
+  width: 1122px;
+  height: 84px;
+  top: 22px;
+  left: 3px;
+}
+
+.main-page .location {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 10px;
+  left: 0;
+  object-fit: cover;
+}
+
+.main-page .search {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 10px;
+  left: 400px;
+  object-fit: cover;
+}
+
+.main-page .pin {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 10px;
+  left: 779px;
+  object-fit: cover;
+}
+
+.main-page .text-wrapper-5 {
+  position: absolute;
+  width: 320px;
+  top: 106px;
+  left: 0;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .text-wrapper-6 {
+  position: absolute;
+  width: 320px;
+  top: 106px;
+  left: 402px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .text-wrapper-7 {
+  position: absolute;
+  width: 320px;
+  top: 106px;
+  left: 779px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .p {
+  position: absolute;
+  width: 321px;
+  top: 165px;
+  left: 1px;
+  font-family: "Nantes-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main-page .text-wrapper-8 {
+  position: absolute;
+  width: 321px;
+  top: 165px;
+  left: 401px;
+  font-family: "Nantes-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main-page .text-wrapper-9 {
+  position: absolute;
+  width: 321px;
+  top: 165px;
+  left: 779px;
+  font-family: "Nantes-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main-page .start-now-button {
+  position: absolute;
+  width: 517px;
+  height: 87px;
+  top: 124px;
+  left: 461px;
+  background-color: #000000;
+  border-radius: 90px;
+}
+
+.main-page .text-wrapper-10 {
+  position: absolute;
+  width: 357px;
+  top: 14px;
+  left: 77px;
+  font-family: "Nantes-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-page .menu-pop-up {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.main-page .overlap-4 {
+  position: relative;
+  height: 966px;
+}
+
+.main-page .background-image {
+  position: absolute;
+  width: 1296px;
+  height: 966px;
+  top: 0;
+  left: 6%;
+  object-fit: cover;
+  border-bottom-left-radius: 7%;
+  border-bottom-right-radius: 7%;
+}
+
+.main-page .nav-bar {
+  position: absolute;
+  width: 1440px;
+  height: 88px;
+  top: 0;
+  left: 0;
+}
+
+.main-page .title {
+  position: absolute;
+  width: 290px;
+  height: 73px;
+  top: 15px;
+  left: 93px;
+}
+
+.main-page .text-wrapper-11 {
+  position: absolute;
+  width: 215px;
+  top: 17px;
+  left: 73px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  transition: 0.3s color; /* Animacion para cambiar el color del texto del titulo a gris en hover */
+}
+
+.main-page .title-icon {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.main-page .text-wrapper-11:hover {
+  color: grey;
+}
+
+.main-page .menu-button {
+  position: absolute;
+  width: 171px;
+  height: 51px;
+  top: 26px;
+  left: 1160px;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.main-page .overlap-group-2 {
+  position: relative;
+  width: 169px;
+  height: 51px;
+  background-color: #000000;
+  border-radius: 17px;
+  transition: 0.3s linear;
+}
+
+.main-page .MB-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 4px;
+  left: 119px;
+  object-fit: cover;
+  transition: 1.5s cubic-bezier(0.37, 0, 0.63, 1); /* Aplicando animacion para el icono del boton del menu */
+}
+
+.main-page .overlap-group-2:hover { /* Cambiar el color del boton menu cuando el mouse esta hovering */
+    background-color: rgb(71, 71, 71);
+    transition: 0.3s linear;
+}
+
+.main-page .overlap-group-2:hover .MB-icon {
+  transform: rotateY(720deg); /* Rotar el icono del boton menu 720 grados en su eje Y */
+}
+
+
+.main-page .text-wrapper-12 {
+  position: absolute;
+  width: 104px;
+  top: 7px;
+  left: 15px;
+  font-family: "Nantes-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+@keyframes fadeIn { /* Keyframes de animacion para el titulo y subtitulo */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu-pop-up .text-wrapper-13 {
+    position: absolute;
+    width: 684px; 
+    top: 220px;
+    left: 25%;
+    font-family: "Nantes-Regular", Helvetica;
+    font-weight: 400;
+    color: white;
+    font-size: 96px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+
+    opacity: 0;
+    animation: fadeIn 900ms ease-out forwards;
+    animation-delay: 100ms;
+}
+
+.menu-pop-up .text-wrapper-14 {
+    position: absolute;
+    width: 684px; 
+    top: 380px;
+    left: 25%;
+    font-family: "Nantes-Regular", Helvetica;
+    font-weight: 400;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+
+    opacity: 0;
+    animation: fadeIn 900ms ease-out forwards;
+    animation-delay: 700ms;
+}
+
+/* Boton del menu */
+.menu-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none; 
+}
+
+/* Inicialmente esconder el menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 87%; /* Posicionar abajo del boton menu */
+    left: 82%;
+    width: 9%;
+    background-color: black;
+    color: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1000; /* Asegura que el menu se muestra al frente de otros objetos */
+}
+
+.menu-button:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+
+/* Estilar los items del menu */
+.dropdown-menu li {
+    padding: 10px 20px;
+    white-space: nowrap; /* Preveer que los items esten wrapped */
+}
+
+/* Estilar los links */
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent;
+    color: grey; /* Cambiar el color de los items del menu a gris en hover */
+}
+
+
+.footer-icon {
+  width: 15%;
+}
+
+.footer-text {
+  color: white;
+}
+
+/* Estilar el boton para subir */
+#backToTopBtn {
+    display: none; /* Escondido por defecto */
+    position: fixed; /* Posicion fixed */
+    bottom: 20px; /* 20px de la parte de abajo de la pantalla */
+    right: 20px; /* 20px de la derecha */
+    z-index: 1000; /* Asegurando que esta por encima de otros elementos */
+    background-color: #4c4c4c; 
+    color: #fff; 
+    border: none; /* Eliminar border */
+    padding: 15px; /* Padding */
+    border-radius: 10px; /* Border radius consistente con el resto del sitio */
+    cursor: pointer; /* Pointer cursor en hover */
+    font-size: 18px; /* Tamano de la fuente */
+    opacity: 0; /* Opacidad para la animacion */
+    transition: opacity 0.3s ease; /* Animacion smooth para la transicion */
+}
+
+/* Estado visible */
+#backToTopBtn.show {
+    display: block;
+    opacity: 1; /* Visible completamente para la animacion */
+}
+
+#backToTopBtn:hover {
+    background-color: #3d3d3d; /* Background mas oscuro en hover */
+}
