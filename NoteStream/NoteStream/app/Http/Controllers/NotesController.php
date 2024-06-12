@@ -9,11 +9,14 @@ class NotesController extends Controller
 {
     public function index()
     {
-        $notes = Notas::where('IDUsuario', auth()->id())->get();
+        $notes = Notas::all();
         return view('notes', compact('notes'));
     }
 
-    
+    public function create()
+    {
+        return view('notes.create');
+    }
 
     public function store(Request $request)
     {
@@ -22,27 +25,19 @@ class NotesController extends Controller
             'body' => 'required',
         ]);
 
-        $note = Notas::create([
-            'Titulo' => $request->title,
-            'Contenido' => $request->body,
-            'IDUsuario' => auth()->id(),
-        ]);
-
-        return response()->json($note);
+        Notas::create($request->all());
+        return redirect()->route('notes.index');
     }
 
-
-
-    public function show($id)
+    public function show(Notas $note)
     {
-        try {
-        $note = Notas::findOrFail($id);
-        return response()->json($note);
-        } catch (\Exception $e) {
-            return response()->json(['error' => $e->getMessage()], 400);
-        }
+        return view('notes.show', compact('note'));
     }
 
+    public function edit(Notas $note)
+    {
+        return view('notes.edit', compact('note'));
+    }
 
     public function update(Request $request, Notas $note)
     {
@@ -51,20 +46,13 @@ class NotesController extends Controller
             'body' => 'required',
         ]);
 
-       /*  $note = Notas::findOrFail($id); */
-        $note->update([
-            'Titulo' => $request->title,
-            'Contenido' => $request->body,
-        ]);
-
-        return response()->json($note);
+        $note->update($request->all());
+        return redirect()->route('notes.index');
     }
 
-    public function destroy($id)
+    public function destroy(Notas $note)
     {
-        $note = Notas::findOrFail($id);
         $note->delete();
-
-        return response()->json(['success' => true]);
+        return redirect()->route('notes.index');
     }
 }

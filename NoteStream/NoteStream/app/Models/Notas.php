@@ -12,8 +12,6 @@ class Notas extends Model
 
     protected $table = 'notas';
 
-    protected $primaryKey = 'IDNota';
-
     protected $fillable = [
         'Titulo',  // Updated to match migration
         'Contenido',  // Updated to match migration
